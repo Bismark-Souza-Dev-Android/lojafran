@@ -24,7 +24,7 @@ class _LoginPage2State extends State<LoginPage2> {
               maxHeight: MediaQuery.of(context).size.height,
             ),
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
+              margin: const EdgeInsets.symmetric(horizontal: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -35,7 +35,9 @@ class _LoginPage2State extends State<LoginPage2> {
                       height: 300,
                       width: 300,
                       margin: const EdgeInsets.only(bottom: 10),
-                      child: Image.asset('assets/imagens/logo1.png',)),
+                      child: Image.asset(
+                        'assets/imagens/logo1.png',
+                      )),
                   const Text(
                     "Já tem cadastro?",
                     style: TextStyle(
@@ -57,7 +59,7 @@ class _LoginPage2State extends State<LoginPage2> {
                   Container(
                     width: double.infinity,
                     height: 50,
-                    margin: EdgeInsets.only(top: 40, bottom: 5),
+                    margin: const EdgeInsets.only(top: 40, bottom: 5),
                     child: TextField(
                       controller: emailController,
                       onChanged: (value) {
@@ -80,7 +82,7 @@ class _LoginPage2State extends State<LoginPage2> {
                   const SizedBox(
                     height: 1,
                   ),
-                  Container(
+                  SizedBox(
                       width: double.infinity,
                       height: 50,
                       child: TextField(
@@ -134,7 +136,8 @@ class _LoginPage2State extends State<LoginPage2> {
                             } else {
                               ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(
-                                      content: Text("Erro ao efetuar o login")));
+                                      content:
+                                          Text("Erro ao efetuar o login")));
                             }
                           },
                           style: ButtonStyle(
@@ -157,7 +160,7 @@ class _LoginPage2State extends State<LoginPage2> {
                   Container(
                     width: double.infinity,
                     margin: const EdgeInsets.symmetric(horizontal: 15),
-                    height: 15,
+                    height: 25,
                     alignment: Alignment.center,
                     child: const Text(
                       "Esqueci minha senha",
