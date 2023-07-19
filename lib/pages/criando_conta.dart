@@ -12,7 +12,7 @@ class _CriarContaNovaState extends State<CriarContaNova> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Crie sua conta"),
+        title: const Text("Crie a conta"),
       ),
       backgroundColor: const Color.fromARGB(255, 196, 129, 190),
     );
