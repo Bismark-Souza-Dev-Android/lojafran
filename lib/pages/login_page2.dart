@@ -79,9 +79,6 @@ class _LoginPage2State extends State<LoginPage2> {
                           )),
                     ),
                   ),
-                  const SizedBox(
-                    height: 1,
-                  ),
                   SizedBox(
                       width: double.infinity,
                       height: 50,
@@ -116,12 +113,10 @@ class _LoginPage2State extends State<LoginPage2> {
                               ),
                             )),
                       )),
-                  const SizedBox(
-                    height: 25,
-                  ),
                   Container(
-                    width: double.infinity,
+                    width: 250,
                     alignment: Alignment.center,
+                    height: 90,
                     child: SizedBox(
                       width: double.infinity,
                       child: TextButton(
@@ -154,13 +149,10 @@ class _LoginPage2State extends State<LoginPage2> {
                           )),
                     ),
                   ),
-                  const SizedBox(
-                    height: 120,
-                  ),
                   Container(
                     width: double.infinity,
                     margin: const EdgeInsets.symmetric(horizontal: 15),
-                    height: 25,
+                    height: 30,
                     alignment: Alignment.center,
                     child: const Text(
                       "Esqueci minha senha",

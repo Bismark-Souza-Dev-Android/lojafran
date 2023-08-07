@@ -19,7 +19,7 @@ class _CriarContaNovaState extends State<CriarContaNova> {
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(10),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                   height: 250,
@@ -61,8 +61,14 @@ class _CriarContaNovaState extends State<CriarContaNova> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  label: Text("Nome"),
+                  label: Text(
+                    "Nome",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
                   hintText: "Digite seu nome",
+                  hintStyle: TextStyle(color: Colors.white),
                   prefixIcon: Icon(
                     Icons.person,
                     color: Color.fromARGB(255, 173, 99, 180),
@@ -71,8 +77,14 @@ class _CriarContaNovaState extends State<CriarContaNova> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  label: Text("Telefone"),
+                  label: Text(
+                    "Telefone",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
                   hintText: "Digite seu Telefone",
+                  hintStyle: TextStyle(color: Colors.white),
                   prefixIcon: Icon(
                     Icons.phone,
                     color: Color.fromARGB(255, 173, 99, 180),
@@ -81,8 +93,14 @@ class _CriarContaNovaState extends State<CriarContaNova> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  label: Text("E-mail"),
+                  label: Text(
+                    "E-mail",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
                   hintText: "nome@email.com",
+                  hintStyle: TextStyle(color: Colors.white),
                   prefixIcon: Icon(
                     Icons.email,
                     color: Color.fromARGB(255, 173, 99, 180),
@@ -91,8 +109,14 @@ class _CriarContaNovaState extends State<CriarContaNova> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  label: Text("Senha"),
+                  label: Text(
+                    "Senha",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
                   hintText: "Digite sua senha",
+                  hintStyle: TextStyle(color: Colors.white),
                   prefixIcon: Icon(
                     Icons.lock,
                     color: Color.fromARGB(255, 173, 99, 180),
@@ -105,7 +129,7 @@ class _CriarContaNovaState extends State<CriarContaNova> {
               ElevatedButton(
                 style: ButtonStyle(
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15))),
+                        borderRadius: BorderRadius.circular(20))),
                     backgroundColor: MaterialStateProperty.all(
                         const Color.fromARGB(255, 173, 99, 180))),
                 onPressed: () {},
